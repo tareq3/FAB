@@ -5,12 +5,14 @@ Animated Floating action Button
 allprojects {
 		repositories {
 			...
+			
 			maven { url 'https://jitpack.io' }
 		}
 	}
 
 #2:
 dependencies {
+
 	        implementation 'com.github.tareq3:advanced_fab:1.0'
 	}
 
