@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.mti.fablibrary.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenuUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_addButtonSize="mini"
+        app:fab_addButtonStrokeVisible="true"
+
+        app:fab_labelStyle="@style/menu_labels_style"
+
+        app:fab_expandDirection="up"
+        app:fab_mti_plus_icon_Size="30dp"
+        app:fab_mti_plus_icon_Stroke="3dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton_Mini">
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_mti_shadow_offset="2dp"
+            app:fab_mti_shadow_radius="9dp"
+            app:fab_size="normal"
+            app:fab_title="Action A"/>
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_mti_shadow_offset="2dp"
+            app:fab_mti_shadow_radius="9dp"
+            app:fab_mti_size_custom="48dp"
+            app:fab_size="custom"
+            app:fab_title="Action B"/>
+    </com.mti.fablibrary.FloatingActionsMenu>
+
+    <com.mti.fablibrary.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_addButtonSize="normal"
+        app:fab_expandDirection="left"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton_Mini">
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="mini" />
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="normal" />
+    </com.mti.fablibrary.FloatingActionsMenu>
+
+    <com.mti.fablibrary.FloatingActionButton
+        android:id="@+id/floatingActionButtonNormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        app:fab_colorDisabled="@color/half_black"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/white_pressed"
+        app:fab_icon="@android:drawable/btn_star"
+        app:fab_size="normal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+
+    <com.mti.fablibrary.FloatingActionButton
+        android:id="@+id/floatingActionButton_Mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="180dp"
+        android:layout_marginRight="180dp"
+        app:fab_colorDisabled="@color/half_black"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/white_pressed"
+        app:fab_icon="@android:drawable/btn_star"
+        app:fab_size="mini"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <com.mti.fablibrary.FloatingActionButton
+        android:id="@+id/floatingActionButton_Custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="300dp"
+        android:layout_marginRight="300dp"
+        app:fab_colorDisabled="@color/half_black"
+        app:fab_colorNormal="@color/white"
+        app:fab_colorPressed="@color/white_pressed"
+        app:fab_icon="@android:drawable/btn_star"
+
+        app:fab_mti_icon_size="25dp"
+        app:fab_mti_shadow_offset="2dp"
+        app:fab_mti_shadow_radius="7dp"
+        app:fab_mti_size_custom="30dp"
+        app:fab_size="custom"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+
+    <com.mti.fablibrary.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenuRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        app:fab_addButtonColorNormal="@color/white"
+        app:fab_addButtonColorPressed="@color/white_pressed"
+        app:fab_addButtonPlusIconColor="@color/half_black"
+        app:fab_addButtonSize="mini"
+        app:fab_expandDirection="right"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton_Mini">
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="normal"
+            app:fab_mti_shadow_offset="2dp"
+            app:fab_mti_shadow_radius="9dp"/>
+
+        <com.mti.fablibrary.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_size="custom"
+            app:fab_mti_size_custom="48dp"
+            app:fab_mti_shadow_offset="2dp"
+            app:fab_mti_shadow_radius="9dp"/>
+    </com.mti.fablibrary.FloatingActionsMenu>
+
+</android.support.constraint.ConstraintLayout>
